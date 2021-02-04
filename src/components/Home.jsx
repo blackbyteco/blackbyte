@@ -1,10 +1,16 @@
 import React from 'react'
-import '../assets/tailwind.css'
 import Header from './Header'
+import Hero from './Hero'
+import Services from './Services'
 
-const Home = () => {
+// This is a layout component
+const Home = (props) => {
     return (
-       <p></p>
+        <>
+            <Header />
+            <Hero />
+            <Services />
+        </>
     )
 };
 
