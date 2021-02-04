@@ -1,7 +1,7 @@
 import React from 'react'
 
 // This is a section component
-function Hero(props){
+const Hero = () => {
     return (
         <section>
             <div className="relative bg-white dark:bg-gray-900 overflow-hidden">
