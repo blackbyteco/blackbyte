@@ -7,7 +7,7 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className="sticky bg-gray-900">
+        <div className="sticky bg-white dark:bg-black-dark">
             <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
                 <div className="flex justify-start lg:w-0 lg:flex-1">
                     <a href="/">
@@ -16,7 +16,7 @@ export default function Header() {
                     </a>
                 </div>
                 <div className="-mr-2 -my-2 md:hidden">
-                    <button onClick={() => setIsOpen(!isOpen)} type="button" className="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <button onClick={() => setIsOpen(!isOpen)} type="button" className="bg-black-dark rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-blue-default focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-default">
                         <span className="sr-only">Open menu</span>
                         {/* Heroicon name: outline/menu */}
                         <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -28,22 +28,22 @@ export default function Header() {
                     {/* Nav Button: Work */}
                     <div className="relative">
                         {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
-                        <button type="button" className="group bg-gray-900 rounded-md text-white inline-flex items-center text-base font-medium hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        <button type="button" className="group rounded-md text-black-dark dark:text-gray-dark inline-flex items-center text-base font-medium hover:text-blue-default focus:outline-none focus:ring-offset-2 focus:ring-blue-default">
                             <span>Work</span>
                         </button>
                     </div>
                     {/* Nav Button: Services */}
-                    <a href="/" className="text-base font-medium text-white hover:text-gray-100">
+                    <a href="/" className="text-base font-medium text-black-dark dark:text-gray-dark hover:text-blue-default">
                         Services
                     </a>
                     {/* Nav Button: About */}
-                    <a href="/" className="text-base font-medium text-white hover:text-gray-100">
+                    <a href="/" className="text-base font-medium text-black-dark dark:text-gray-dark hover:text-blue-default">
                         About
                     </a>
                     {/* Nav Button: Contact */}
                     <div className="relative">
                         {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
-                        <button type="button" className="group bg-gray-900 rounded-md text-white inline-flex items-center text-base font-medium hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        <button type="button" className="group rounded-md text-black-dark dark:text-gray-dark inline-flex items-center text-base font-medium hover:text-blue-default focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                             <span>Contact</span>
                         </button>
                     </div>
